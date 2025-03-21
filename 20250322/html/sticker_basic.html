@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+  <button onclick="addSticker()">스티커 받기</button>
+  <div id="board"></div>
+</body>
+<script>
+  let stickers = 0;
+
+function addSticker() {
+  stickers++;
+
+  let html = "";
+  for (let i = 0; i < stickers; i++) {
+    html += "🐥";
+  }
+
+  document.getElementById("board").innerHTML = html;
+}
+</script>
+</html>

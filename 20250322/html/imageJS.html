@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+  <img src="images/timo_dune.png" width="500"/>
+</body>
+<script>
+  let timoImage = document.querySelector("img");
+
+  timoImage.onclick = function () {
+    let mySrc = timoImage.getAttribute("src");
+    if (mySrc === "images/timo_dune.png") {
+      timoImage.setAttribute("src", "images/timo_heart.jpeg");
+    } else {
+      timoImage.setAttribute("src", "images/timo_dune.png");
+    }
+  };
+</script>
+</html>

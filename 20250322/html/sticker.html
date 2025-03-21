@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+  <button id="addSticker">오늘 스티커 받기!</button>
+  <div id="stickerBoard"></div>
+  <p id="message"></p>
+</body>
+<script>
+  let stickers = 0;
+
+  document.getElementById("addSticker").addEventListener("click", function () {
+    stickers++;
+    updateBoard();
+  });
+
+  function updateBoard() {
+    let board = document.getElementById("stickerBoard");
+    board.innerHTML = "🐥".repeat(stickers);
+
+    if (stickers === 10) {
+      document.getElementById("message").textContent = "🎉 10일 성공! 대단해요 공주님!";
+    }
+  }
+</script>
+</html>
