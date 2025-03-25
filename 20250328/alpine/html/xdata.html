@@ -1,0 +1,11 @@
+<html>
+<head>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <div x-data="{ nickname: '' }">
+        <input x-model="nickname" placeholder="닉네임을 입력하세요" />
+        <p x-text="nickname + ' 님 환영해요!'"></p>
+    </div>
+</body>
+</html>

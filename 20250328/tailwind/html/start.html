@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind + Alpine</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- 💡 요게 핵심! -->
+</head>
+<body class="p-6 bg-gray-100">
+
+  <div x-data="{ open: false }" class="text-center">
+    <button @click="open = !open" class="bg-blue-500 text-white px-4 py-2 rounded shadow">
+      토글 버튼
+    </button>
+
+    <p x-show="open" class="mt-4 text-xl text-pink-600 font-bold">
+      짜잔! ✨ 여기가 보여집니다
+    </p>
+  </div>
+
+</body>
+</html>
