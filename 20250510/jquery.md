@@ -39,7 +39,7 @@ why? 제이쿼리는 HTML 안에서 요소를 찾거나, 수정해야하는데, 
 | `document.getElementsByClassName("class")` | `$(".class")` |
 | `document.querySelector("tag")`            | `$("tag")`    |
 
-### event handler
+### 🟢 event handler
 
 ```js
 $("#btn").click(function(){
@@ -57,17 +57,17 @@ btn.addEventListener("click", function () {
 });
 ```
 
-### CSS 조작법
+### 🟢 CSS 조작법
 ```js
 $("#box").css("background-color", "yellow");
 ```
 
-### HTML 조작법
+### 🟢 HTML 조작법
 ```js
 $("#text").html("안녕하세요!");
 ```
 
-### show OR hide
+### 🟢 show OR hide
 ```js
 $("#box").hide();
 $("#box").show();
@@ -75,14 +75,14 @@ $("#box").toggle();
 ```
 
 
-### 메서드 체이닝
+### 🟢 메서드 체이닝
 ```js
 $("#box").css("color", "white").css("background-color", "black");
 ```
 이렇게 여러 작업을 한줄로도 가능합니다 ! 
 
 
-### `$(this)` 사용법
+### 🟢 `$(this)` 사용법
 ```js
 $("button").click(function(){
   $(this).css("background-color", "orange");
