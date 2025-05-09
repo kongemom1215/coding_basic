@@ -13,9 +13,10 @@ $("#myDiv").css("color", "red");
 ```
 
 
+
 # jQuery 사용법
 
-## jQuery 라이브러리를 가져오기기
+## 💿 jQuery 라이브러리를 가져오기
 ```js
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 ```
@@ -73,6 +74,39 @@ $("#box").show();
 $("#box").toggle();
 ```
 
+
+### 메서드 체이닝
+```js
+$("#box").css("color", "white").css("background-color", "black");
+```
+이렇게 여러 작업을 한줄로도 가능합니다 ! 
+
+
+### `$(this)` 사용법
+```js
+$("button").click(function(){
+  $(this).css("background-color", "orange");
+});
+```
+`$(this)`는 이벤트가 발생한 자기 자신을 가져오게된다!
+
+
+#### 코드를 따라 쳐보세요!
+```js
+<div>
+  <button id="single" type="button"> 클릭하세요 </button>
+</div>
+
+let cnt = 0;
+
+$('#single').click(function(){
+	$(this).text((++cnt) +'번 클릭하셨습니다.');
+});
+```
+이렇게 동적으로 사용할 수도 있어요! 
+
+
+
 ## 간단 실습1. div 바로 아래 p 태그의 글자색 바꿔보기
 ```html
 <div>
@@ -81,12 +115,13 @@ $("#box").toggle();
 ```
 
 <details>
-<summary>접기/펼치기</summary>
+<summary>답 펼쳐보기</summary>
 
 ```js
 $("div > p").css("color","blue");
 ```
 </details>
+
 
 
 ## 간단 실습2. 클래스 안의 span 의 font 크기 바꿔보기
@@ -97,12 +132,13 @@ $("div > p").css("color","blue");
 ```
 
 <details>
-<summary>접기/펼치기</summary>
+<summary>답 펼쳐보기</summary>
 
 ```js
 $(".myClass span").css("font-size","30px");
 ```
 </details>
+
 
 
 ## 실습해보기
