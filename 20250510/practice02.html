@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery 실습</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+
+  <h1>jQuery 실습 예제2</h1>
+
+  <script>
+    $(document).ready(function(){
+        $.ajax({
+            url: "https://jsonplaceholder.typicode.com/users",
+            method: "GET",
+            success: function(data){
+                console.log(data);
+            }
+        });
+    });
+  </script>
+
+</body>
+</html>

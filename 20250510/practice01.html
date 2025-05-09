@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery 실습</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 100px;
+      margin: 20px auto;
+      font-size: 20px;
+    }
+    button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>jQuery 실습 예제</h1>
+
+  <div id="box">Hello World</div>
+
+  <button id="btnChangeText">글자 바꾸기</button>
+  <button id="btnChangeColor">배경색 바꾸기</button>
+  <button id="btnHide">숨기기</button>
+  <button id="btnShow">보이기</button>
+  <button id="btnToggle">토글</button>
+
+  <script>
+    // 문서가 준비되면 실행
+    $(document).ready(function(){
+      // 글자 바꾸기
+      $("#btnChangeText").click(function(){
+        $("#box").html("안녕하세요!");
+      });
+
+      // 배경색 바꾸기
+      $("#btnChangeColor").click(function(){
+        $("#box").css("background-color", "pink");
+      });
+
+      // 숨기기
+      $("#btnHide").click(function(){
+        $("#box").hide();
+      });
+
+      // 보이기
+      $("#btnShow").click(function(){
+        $("#box").show();
+      });
+
+      // 토글
+      $("#btnToggle").click(function(){
+        $("#box").toggle();
+      });
+    });
+  </script>
+
+</body>
+</html>
