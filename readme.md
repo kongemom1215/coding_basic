@@ -40,6 +40,14 @@ Git의 동작방식을 배우고, 직접 연동을 해보았습니다 !
 자바스크립트의 특징을 알아보고, 직접 사용해보았습니다! 이제 실전에서 사용할 수 있는 Javascript 라이브러리를 다음시간에 학습하겠습니다.
 ```
 
+2025.05.10
+```python
+- jQuery 입문
+- jQuery 기본문법과 실습을 진행해보았습니다. 
+
+다음시간에는 ajax, bootstrap을 통해 서버와 통신하는 방법, 페이지를 꾸미는 방법을 배워보겠습니다.
+```
+
 ### 앞으로의 계획
 - `frontend` : HTML, CSS, Javascript, Jquery
 - `backend` : Node.js, MySQL
