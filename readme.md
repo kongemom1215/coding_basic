@@ -48,7 +48,15 @@ Git의 동작방식을 배우고, 직접 연동을 해보았습니다 !
 다음시간에는 ajax, bootstrap을 통해 서버와 통신하는 방법, 페이지를 꾸미는 방법을 배워보겠습니다.
 ```
 
+2025.05.16
+```python
+- ajax 를 통해 서버 데이터 통신을 해보았습니다.
+- bootstrap을 이용하여 웹페이지를 꾸미는 방법을 익혔습니다
+
+다음 시간에는 백엔드를 나가보겠습니다 :)
+```
+
 ### 앞으로의 계획
 - `frontend` : HTML, CSS, Javascript, Jquery
 - `backend` : Node.js, MySQL
-- `배포` : Netlify, Git
+- `배포` : Netlify, Git, OR Render.com
