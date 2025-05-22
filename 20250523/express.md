@@ -44,3 +44,25 @@ app.listen(3000, () => {
     console.log('Server is listening on port 3000');
 });
 ```
+
+
+### nodemon
+Node.js 서버 코드를 수정할 때마다 자동으로 서버를 재시작해주는 도구
+
+1. 설치하기
+```
+npm install nodemon -D
+```
+2. `package.json` 확인
+- `-D` 옵션은 일반 dependencies가 아닌 devDependencies에 설정  
+> devDependencies에: 우리가 만들었던 서버의 필수 요소는 아니지만 개발할 땐 필요한 라이브러리를 넣는다.
+
+- scripts 사용법
+```json
+"scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+}
+```
+스크립트의 설정을 따르기 위해서는 `npm run` 명령어를 따른다.  
+refresh만으로 바로바로 확인할 수 있다. 
