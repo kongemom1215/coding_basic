@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>학생 목록</title>
+</head>
+<body>
+  <h1>학생 목록</h1>
+
+  <ul>
+    <% students.forEach((s, index) => { %>
+      <li>
+        <strong><%= index + 1 %>번:</strong> 
+        이름: <%= s.name %>, 
+        나이: <%= s.age %>, 
+        스티커: <%= s.stickers %>개
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
