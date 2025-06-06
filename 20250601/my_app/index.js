@@ -7,14 +7,6 @@ import Student from './models/Student.js';
 mongoose.connect('mongodb+srv://juhye:konge@myapp.jljc3lv.mongodb.net/?retryWrites=true&w=majority&appName=myapp')
 .then(() => {
     console.log('✅ MongoDB Atlas 연결 성공');
-    // 테스트용 데이터 저장
-    const student = new Student({
-      name: '홍길동',
-      age: 10,
-      stickers: 3
-    });
-
-    student.save().then(() => console.log('🎉 저장 완료'));
 })
 .catch((err) => {
     console.error('❌ MongoDB Atlas 연결 실패', err);

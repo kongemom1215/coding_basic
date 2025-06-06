@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>학생 등록</title>
+</head>
+<body>
+  <h1>학생 등록</h1>
+  <form action="/students/insert" method="POST">
+    ID: <input type="text" name="id" required><br>
+    이름: <input type="text" name="name" required><br>
+    나이: <input type="number" name="age" required><br>
+    스티커 개수: <input type="number" name="stickers" required><br>
+    <button type="submit">등록</button>
+  </form>
+
+  <a href="/students">← 목록으로</a>
+</body>
+</html>
