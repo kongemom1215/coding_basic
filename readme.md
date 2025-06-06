@@ -56,6 +56,13 @@ Git의 동작방식을 배우고, 직접 연동을 해보았습니다 !
 다음 시간에는 백엔드를 나가보겠습니다 :)
 ```
 
+2025.05.23
+```python
+- nodeJS 를 설치하고 서버를 구축해보았습니다. (CJS스타일, ESM 스타일)
+- Express를 사용해서 더 간단하게 서버를 띄워보았습니다.
+- nodemon을 설치하여 재기동하지 않고 확인하는 방법을 배웠습니다. 
+```
+
 ### 앞으로의 계획
 - `frontend` : HTML, CSS, Javascript, Jquery
 - `backend` : Node.js, MySQL
