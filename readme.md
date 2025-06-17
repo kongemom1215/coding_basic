@@ -63,6 +63,14 @@ Git의 동작방식을 배우고, 직접 연동을 해보았습니다 !
 - nodemon을 설치하여 재기동하지 않고 확인하는 방법을 배웠습니다. 
 ```
 
+2025.06.08
+```python
+- javascript 간단한 문제를 풀어보았습니다.
+- 템플릿엔진 EJS에 대해 배워보았습니다.
+- MongoDB 설정을 추가하고 생성 작업을 해보았습니다.
+```
+
+
 ### 앞으로의 계획
 - `frontend` : HTML, CSS, Javascript, Jquery
 - `backend` : Node.js, MySQL
